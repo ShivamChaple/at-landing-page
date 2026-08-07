@@ -1,0 +1,203 @@
+ @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&family=Sora:wght@700;800&display=swap');
+
+
+:root{
+    --bg-main: #dafae3;
+    --primary: #0078D4;
+    --text-muted: #64748b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-main);
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+    line-height: 1.6;
+
+}
+
+h1,h2,h3,h4{
+    font-family: 'Sora' ,sans-serif;
+    line-height: 1.1;
+    word-break: break-word;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 12px 80px;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img{
+    height: 38px;
+    width: auto;
+}
+
+.logo-text{
+    font-family: 'Sora' , sans-serif;
+    font-size: 1.8rem;
+    color: white;
+    line-height: 0.8;
+    font-weight: 500;
+
+}
+
+.nav-links{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+.nav-links a:hover{
+    color : var(--primary)
+}
+
+.btn-pill{
+    background-color: whitesmoke;
+    color : black ;
+    padding : 13px 32px ;
+    border-radius: 100px ;
+    text-decoration: none;
+    display : flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+
+}
+
+.btn-pill:hover{
+    background-color: #f0f0f0;
+}
+
+.hero{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 40px;
+    background-color: #f0f0ff;
+    position: relative;
+}
+
+.badge{
+    display: inline-flex;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 1px solid rgb(255, 207, 255);
+    border-radius: 100px;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 32px;
+
+}
+
+.hero h1{
+    font-size: 5rem;
+    color: black;
+    max-width: 1000px;
+    margin-bottom: 24px;
+    line-height: 1;
+
+}
+
+.hero h1 span{
+    color: var(--primary);
+
+}
+
+.hero p{
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-bottom: 56px;
+    font-weight: 400;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.btn-cta{
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 12px;
+    padding: 20px 48px;
+
+}
+
+.btn-cta:hover{
+    background-color: black;
+
+}
+.link-action{
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.floting-card{
+    position: absolute;
+    width: 320px;
+    background-color: white;
+    padding: 14px;
+    border-radius: 36px;
+    border: 1px solid blanchedalmond;
+    overflow: hidden;
+
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 24px;
+    background-color: grey;
+}
+
+.card-left{
+    left: 40px;
+    top: 50px;
+
+}
+
+.card-right{
+    right: 40px;
+    bottom: 15%;
+}

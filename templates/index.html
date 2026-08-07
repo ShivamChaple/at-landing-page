@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttenZa - Seamless AI Attendance</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
+    <link rel="icon"  type= "img/png"href="{{url_for('static', filename = 'img/logoAttenZa.png')}}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="{{url_for('static', filename = 'img/logoAttenZa.png')}}" style="height: 32px;" , alt="attenzalogo">
+            <div class="logo-text">AttenZa</div>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#features">Features</a>
+            <a href="#journey">Journey</a>
+            <a href="#tech">Tech Stack</a>
+        </div>
+
+        <div class="nav-cta">
+            <a href="https://attenza-main.streamlit.app/" class="btn-pill">
+                Go to AI Attendance
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>
+            </a>
+        </div>
+
+    </nav>
+
+    <header class="hero">
+        <div class="badge">
+            Welcome to AttenZa
+        </div>
+        <h1>Seamless AI <br>Attendance <br><span>System</span></h1>
+        <p>Elevating the modern classroom with next-generation computer vision and voice biometrics. Trusted by forward-thinking institutions.</p>
+        <div class="hero-section">
+            <a href="https://attenza-main.streamlit.app/" class="btn-cta">
+                Go to AI Attendance
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>
+            </a>
+            <a href="journey" class="link-action">Explore Journey</a>
+        </div>
+
+        <div class="floting-card card-left">
+            <div class="card-img">
+                <img src="{{url_for('static', filename = 'img/ideas/')}}" alt="landing image 1">
+            </div>
+
+        </div>
+        <div class="floting-card card-right">
+            <div class="card-img">
+                <img src="{{url_for('static', filename = 'img/ideas/home_page.png')}}" alt="landing image 2">
+            </div>
+
+        </div>
+
+    </header>
+
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="{{url_for('static', filename = 'img/logoAttenZa.png')}}" style="height: 32px;" , alt="attenzalogo">
+                    <div class="logo-text">AttenZa</div>
+                </div>
+                <p>Elevating the modern classroom with next-generation computer vision and voice biometrics. Trusted by forward-thinking institutions.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Products</h4>
+                <ul>
+                    <li>
+                        <a href="#features">AI Attendance</a>
+                    </li>
+                    <li>
+                        <a href="#features">Smart Roster</a>
+                    </li>
+                    <li>
+                        <a href="#tech">Tech Stack</a>
+                    </li>
+                    <li>
+                        <a href="#student-journey">Student Portal</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+            
+            <div class="footer-links">
+                <h4>Experiance</h4>
+                <ul>
+                    <li>
+                        <a href="#journey">Teacher Journey</a>
+                    </li>
+                    <li>
+                        <a href="#student-journey">Student Journey</a>
+                    </li>
+                    <li>
+                        <a href="#features">Voice ID Roll-call</a>
+                    </li>
+                    <li>
+                        <a href="#features">Face ID Scan</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li>
+                        <a href="#">About us</a>
+                    </li>
+                    <li>
+                        <a href="#features">How it works</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms of use</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>
