@@ -29,7 +29,7 @@ h1,h2,h3,h4{
 .navbar{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     padding: 12px 80px;
     background-color: black;
     position: sticky;
@@ -60,6 +60,10 @@ h1,h2,h3,h4{
 .nav-links{
     display: flex;
     gap: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-links a{
@@ -189,11 +193,16 @@ h1,h2,h3,h4{
     object-fit: cover;
     border-radius: 24px;
     background-color: grey;
+    box-shadow: 0 4px 8px #BABABA;
+}
+
+.card-img img:hover{
+    box-shadow: 0 8px 16px #ffd25f;
 }
 
 .card-left{
     left: 40px;
-    top: 50%;
+    top: 46%;
 
 }
 
@@ -257,7 +266,7 @@ h1,h2,h3,h4{
 }
 
 
-/* TWCH STACK SECTION  */
+/* TECH STACK SECTION  */
 
 .tech-stack{
     padding: 80px 40px;
@@ -276,7 +285,8 @@ h1,h2,h3,h4{
 }
 
 .tech-stack .section-tag{
-    color: white;
+    font-size: 2.5rem;
+    color: black;
     font-weight: 700;
 }
 
@@ -300,6 +310,7 @@ h1,h2,h3,h4{
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    height: 100%;
 }
 
 .t-icon{
@@ -332,6 +343,7 @@ h1,h2,h3,h4{
     margin-top: 10px;
     padding: 2px 10px;
     font-weight: 800;
+    margin-top: auto;
 }
 
 
@@ -442,4 +454,220 @@ h1,h2,h3,h4{
     font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
+}
+
+
+
+
+.teacher-flow{
+    padding: 120px 80px;
+}
+
+.flow-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flow-step{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.flow-content{
+    flex: 1;
+}
+
+.step-badge{
+    color: var(--primary);
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+.flow-content h3{
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+
+}
+
+.flow-content p{
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+
+}
+
+.flow-image{
+    flex: 1.4;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+    box-shadow: 0 4px 8px #BABABA;
+}
+
+.flow-image:hover{
+    box-shadow: 0 8px 16px #727272;
+}
+
+.flow-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media(max-width: 768px){
+
+
+    .navbar{
+        padding: 8px 16px;
+    }
+    .logo img{
+        height: 28px;
+    }
+    .logo-text{
+        font-size: 1.1rem;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .btn-pill{
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .hero{
+        padding: 60px 16px;
+    }
+    
+    .hero h1{
+        font-size: 2.4rem;
+        line-height: 1.2;
+    }
+
+    .hero p{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-cta{
+        width: 100%;
+        justify-content: center;
+        padding: 16px;
+        font-size: 1rem;
+    }
+
+    .link-action{
+        font-size: 0.9rem;
+
+    }
+
+    .floting-card{
+        display: none;
+    }
+
+    .features{
+        padding: 60px 16px;
+    }
+
+    .features h2{
+        font-size: 2.1rem;
+    }
+
+    .feature-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feature-card{
+        padding: 24px;
+        border-radius: 24px;
+    }
+
+    .tech-stack{
+        padding : 60px 16px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+
+    .tech-stack .section-tag{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 700;
+}
+
+    .tech-stack h2{
+        font-size: 2rem;
+    }
+
+    .tech-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .tech-card{
+        padding: 20px;
+    }
+
+    .teacher-flow{
+        padding: 60px 16px;
+    }
+
+    .flow-step{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 60px;
+    }
+
+    .flow-content h3{
+        font-size: 1.8rem;
+    }
+
+    .flow-content p{
+        font-size: 1rem;
+    }
+
+    .flow-image{
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .blue-section{
+        padding: 60px 16px;
+        margin: 20px;
+        border-radius: 30px;
+    }
+
+    .blue-section h2{
+        font-size: 2rem;
+    }
+
+    .btn-white{
+        width : 100%;
+        padding: 16px;
+    }
+
+    .main-footer{
+        padding: 60px 16px 30px;
+    }
+
+    .main-footer .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+
 }

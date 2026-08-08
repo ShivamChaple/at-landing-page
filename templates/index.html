@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AttenZa - Seamless AI Attendance</title>
     <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css')}}">
-    <link rel="icon"  type= "img/png"href="{{url_for('static', filename = 'img/logoAttenZa.png')}}">
+    <link rel="icon"  type= "img/png" href="{{url_for('static', filename = 'img/logoAttenZa.png')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
 </head>
 <body>
     <nav class="navbar">
@@ -40,12 +41,12 @@
                 Go to AI Attendance
                 <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="20px" width="20px" xmlns="http://www.w3.org/2000/svg"><path d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z"></path></svg>
             </a>
-            <a href="journey" class="link-action">Explore Journey</a>
+            <a href="#journey" class="link-action">Explore Journey</a>
         </div>
 
         <div class="floting-card card-left">
             <div class="card-img">
-                <img src="{{url_for('static', filename = 'img/ideas/')}}" alt="landing image 1">
+                <img src="{{url_for('static', filename = 'img/ideas/face_attendance.png')}}" alt="landing image 1">
             </div>
 
         </div>
@@ -90,8 +91,114 @@
 
     </section>
 
+
+    <section id="journey" class="teacher-flow">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align: center; margin-bottom: 40px; display: block;">--Workflow--</div>
+            <h2 style="text-align: center; font-size: 3.5rem;margin-bottom: 80px;">The Teacher's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 01</div>
+                    <h3>Secure Login</h3>
+                    <p>
+                        Log in through our secure portal to begin. Your data is fully encrypted and synced across all your devices in real-time.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/teacher_login.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 02</div>
+                    <h3>Interactive Dashboard</h3>
+                    <p>
+                        Effortlessly manage your subjects, track real-time attendance logs, and organize student rosters from one intuitive, centralized hub.                    
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/attendance_page.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 03</div>
+                    <h3>Course Management</h3>
+                    <p>
+                        Setting up a new course is effortless. Just give it a name, and AttenZa automatically configures everything you need to start tracking attendance.          
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/create_new_subject.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 04</div>
+                    <h3>FaceID Attendance</h3>
+                    <p>
+                        Capture the entire room in an instant. Our advanced computer vision processes a single class photo to identify every student in milliseconds.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/face_attendance.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 05</div>
+                    <h3>VoiceID Attendance</h3>
+                    <p>
+                        Activate voice mode for a hands-free roll call. As students respond sequentially, our AI instantly verifies their unique vocal signatures in real-time.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/voice_attendance.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 06</div>
+                    <h3>Access Attendance Logs</h3>
+                    <p>
+                        Browse your complete history of past classes. Get an instant overview of session dates, exact timestamps, and overall attendance ratios at a glance.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/attendance_records.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">STEP 07</div>
+                    <h3>Review Granular Details</h3>
+                    <p>
+                        Dive deeper into any specific session. Access a clear, itemized breakdown to quickly verify individual student names, IDs, and their precise attendance status.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/attendance_details.png')}}" alt="flow image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <section id="tech" class="tech-stack">
-        <div class="section-tag">--Our Backend--</div>
+        <div class="section-tag">--Backend--</div>
         <h2>Advanced Tech Stack</h2>
 
         <div class="tech-grid">
@@ -135,6 +242,72 @@
     </section>
 
 
+
+    <section id="student-journey" class="teacher-flow">
+        <div class="flow-container">
+            <div class="section-tag" style="text-align: center; margin-bottom: 40px; display: block;">--Workflow--</div>
+            <h2 style="text-align: center; font-size: 3.5rem;margin-bottom: 80px;">The Student's Journey</h2>
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">PHASE 01</div>
+                    <h3>Secure FaceID Login</h3>
+                    <p>
+                        Access your student portal instantly using secure facial biometrics. Simply position your face in the camera frame and capture your photo for seamless, password-free authentication.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/student_login.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">PHASE 02</div>
+                    <h3>Instant Quick Enrollment</h3>
+                    <p>
+                        Join new courses with a single click. When using a teacher's invite link or QR code, simply confirm the prompt to instantly add the subject to your roster.                    
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/quick_enroll.png')}}" alt="flow image">
+                </div>
+            </div>
+
+            
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">PHASE 03</div>
+                    <h3>Manual Code Entry</h3>
+                    <p>
+                        Need to join a class manually? Easily enter the unique, centralized subject code provided by your instructor to securely enroll in the correct section.          
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/manual_code_enroll.png')}}" alt="flow image">
+                </div>
+            </div>
+
+
+            <div class="flow-step">
+                <div class="flow-content">
+                    <div class="step-badge">PHASE 04</div>
+                    <h3>Personal Attendance Dashboard</h3>
+                    <p>
+                        Monitor your academic progress at a glance. View all your enrolled subjects side-by-side, check your specific section, and track your total attended classes in real-time.
+                    </p>
+                </div>
+                <div class="flow-image">
+                    <img src="{{url_for('static', filename = 'img/ideas/student_dashboard.png')}}" alt="flow image">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
     <section class="blue-section">
         <h2>Ready to make attendance effortless?</h2>
         <p>Upgrade your daily routine with AttenZa. Join forward-thinking institutions using the ultimate AI assistant to automate attendance instantly.</p>
@@ -173,7 +346,7 @@
             </div>
             
             <div class="footer-links">
-                <h4>Experiance</h4>
+                <h4>Experience</h4>
                 <ul>
                     <li>
                         <a href="#journey">Teacher Journey</a>
